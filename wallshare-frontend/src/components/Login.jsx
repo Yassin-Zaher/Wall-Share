@@ -26,11 +26,11 @@ const Login = () => {
   };
   useEffect(() => {
     /* Global Google */
-    google.accounts.id.initialize({
+    google?.accounts.id.initialize({
       client_id: process.env.REACT_APP_GOOGLE_API_TOKEN,
       callback: responseGoogle,
     });
-    google.accounts.id.renderButton(document.getElementById("signInDiv"), {
+    google?.accounts.id.renderButton(document.getElementById("signInDiv"), {
       theme: "outline",
       size: "large",
     });
